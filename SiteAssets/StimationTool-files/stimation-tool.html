@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stimation Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/sites/site-name/SiteAssets/StimationTool-files/stimation-tool.css?v=stimation-ui-01" />
+</head>
+<body>
+
+<div id="stimation-tool-app">
+
+  <!-- ── HEADER ── -->
+  <header class="stimation-head">
+    <h1 class="stimation-title">Stimation Tool</h1>
+    <p class="stimation-subtitle">
+      Upload your Excel file, select a calculation mode and run the estimation.
+      The tool will process the data and return a styled Excel output for download.
+    </p>
+  </header>
+
+  <!-- ── CONTROLS ── -->
+  <section class="stimation-panel">
+    <div class="stimation-grid">
+
+      <!-- Mode selector -->
+      <div class="stimation-field">
+        <label class="stimation-label" for="stimation-mode">Mode</label>
+        <select id="stimation-mode" class="stimation-select">
+          <option value="ofertas">Oferta / LEO</option>
+          <option value="equipos">Lista de equipos / Recuento de equipos</option>
+        </select>
+      </div>
+
+      <!-- File upload -->
+      <div class="stimation-field">
+        <label class="stimation-label" for="stimation-file">Upload Excel (.xlsx)</label>
+        <input id="stimation-file" class="stimation-file" type="file" accept=".xlsx" />
+      </div>
+
+      <!-- Audit checkbox -->
+      <div class="stimation-field stimation-checkbox-field">
+        <span class="stimation-label">&nbsp;</span>
+        <label class="stimation-checkbox-label">
+          <input id="stimation-include-audit" type="checkbox" />
+          Include audit sheets
+        </label>
+      </div>
+
+      <!-- Actions -->
+      <div class="stimation-field stimation-actions">
+        <span class="stimation-label">&nbsp;</span>
+        <button id="stimation-run" class="stimation-primary-btn" type="button">
+          &#9654; Run estimation
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── STATUS ── -->
+  <div class="stimation-status-card">
+    <p class="stimation-status" id="stimation-status">Waiting for file…</p>
+    <p class="stimation-error" id="stimation-error" hidden></p>
+  </div>
+
+  <!-- ── RESULT ── -->
+  <div class="stimation-result-card" id="stimation-result-card" hidden>
+    <h2>Estimation complete</h2>
+    <p>Your Excel file is ready. Click the button below to download it.</p>
+    <button id="stimation-download" class="stimation-primary-btn" type="button">
+      &#8659; Download generated Excel
+    </button>
+  </div>
+
+</div>
+
+<script src="/sites/site-name/SiteAssets/StimationTool-files/stimation-tool.js?v=stimation-v01"></script>
+</body>
+</html>
