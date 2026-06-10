@@ -1,10 +1,8 @@
 <div align="center">
 
 <a href="https://github.com/Weryyy">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=2800&pause=900&color=BB9AF7&center=true&vCenter=true&width=720&lines=Hola%2C+soy+H%C3%A9ctor+%F0%9F%91%8B;Junior+AI+%26+Big+Data+Engineer;Building%2C+breaking%2C+learning;RL+%C2%B7+LLMs+%C2%B7+Self-hosted+infra" alt="typing header" />
+  <img src="https://raw.githubusercontent.com/Weryyy/Weryyy/main/assets/header.svg" alt="Héctor — Junior AI & Big Data Engineer" width="100%" />
 </a>
-
-### Junior AI & Big Data Engineer · 🇪🇸
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=Weryyy&style=for-the-badge&color=7aa2f7&label=PROFILE+VIEWS" alt="profile views" />
@@ -19,6 +17,14 @@
   <a href="#-github-stats">Stats</a> ·
   <a href="#%EF%B8%8F-contacto--contact">Contact</a>
 </sub>
+
+<br/><br/>
+
+<a href="https://weryyy.github.io/posible-web/">
+  <img src="https://raw.githubusercontent.com/Weryyy/Weryyy/main/assets/portfolio-banner.svg" alt="Visit my interactive portfolio — terminal + neural network" width="100%" />
+</a>
+
+<sub>👆 mi portfolio tiene un <strong>terminal interactivo de verdad</strong> — escribe <code>help</code> y juega</sub>
 
 </div>
 
@@ -36,6 +42,7 @@ Estudiante del **Máster en IA & Big Data** (10/2025 – 04/2026). Me obsesiona 
 
 ## 🚀 Building Now / En construcción
 
+- 🌐 **[Portfolio interactivo](https://weryyy.github.io/posible-web/)** — terminal funcional + red neuronal en canvas, vanilla JS sin frameworks.
 - 🧩 **LightRAG local** — RAG self-hosted enchufado a un agente Claude Code para consultar mis notas y proyectos.
 - 🛡️ **Self-hosted stack** — VPN WireGuard + Termix SSH para acceder a mi homelab desde cualquier sitio.
 - 🧠 **LLM internals** — leyendo papers y reimplementando piezas (attention, RoPE, KV-cache) en PyTorch.
@@ -85,6 +92,7 @@ Estudiante del **Máster en IA & Big Data** (10/2025 – 04/2026). Me obsesiona 
 |------|--------|-------|
 | [**Proyectos-Entrevistas**](https://github.com/Weryyy/Proyectos-Entrevistas) | 14 mini-proyectos de sistemas: LLM simulator, vector search, DAG manager, mini compiler, rate limiter… | `Python` |
 | [**Pokemoncito**](https://github.com/Weryyy/Pokemoncito) | Agente de Reinforcement Learning aprendiendo a jugar Pokémon | `Python` · `PyTorch` |
+| [**posible-web**](https://github.com/Weryyy/posible-web) | Este portfolio: terminal interactivo + canvas, sin frameworks | `JS` · `CSS` |
 | [**Master-IA-y-Bigdata**](https://github.com/Weryyy/Master-IA-y-Bigdata) | Notebooks del máster: ML, deep learning, big data | `Jupyter` |
 | [**selfhosted-vpn-ssh**](https://github.com/Weryyy/selfhosted-vpn-ssh) | Stack self-hosted: WireGuard VPN + Termix SSH | `PowerShell` · `Docker` |
 | [**LightRAG**](https://github.com/Weryyy/LightRAG) | Configuración local personalizada de LightRAG | `JS` · `Python` |
@@ -144,6 +152,9 @@ Estudiante del **Máster en IA & Big Data** (10/2025 – 04/2026). Me obsesiona 
 
 <div align="center">
 
+<a href="https://weryyy.github.io/posible-web/">
+  <img src="https://img.shields.io/badge/Portfolio-weryyy.github.io%2Fposible--web-bb9af7?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=1a1b26" alt="portfolio" />
+</a>
 <a href="mailto:hectorgonzalocid@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-hectorgonzalocid%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a1b26" alt="email" />
 </a>

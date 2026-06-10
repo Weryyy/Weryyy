@@ -1,0 +1,95 @@
+<svg width="900" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Héctor — Junior AI and Big Data Engineer">
+  <defs>
+    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7aa2f7">
+        <animate attributeName="stop-color" values="#7aa2f7;#bb9af7;#7dcfff;#7aa2f7" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#bb9af7">
+        <animate attributeName="stop-color" values="#bb9af7;#7dcfff;#7aa2f7;#bb9af7" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bb9af7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#bb9af7" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .mono { font-family: 'Fira Code', 'Cascadia Code', Consolas, monospace; }
+      .edge { stroke: #3b4261; stroke-width: 1.2; }
+      .signal { stroke: #7aa2f7; stroke-width: 1.6; stroke-linecap: round; stroke-dasharray: 6 120; animation: travel 3.2s linear infinite; }
+      .signal.s2 { stroke: #bb9af7; animation-duration: 4.1s; animation-delay: .8s; }
+      .signal.s3 { stroke: #7dcfff; animation-duration: 3.7s; animation-delay: 1.6s; }
+      .node { fill: #24283b; stroke: #565f89; stroke-width: 1.4; }
+      .node-core { fill: #bb9af7; animation: pulse 2.4s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+      .node-core.n2 { fill: #7aa2f7; animation-delay: .6s; }
+      .node-core.n3 { fill: #9ece6a; animation-delay: 1.2s; }
+      .node-core.n4 { fill: #7dcfff; animation-delay: 1.8s; }
+      .cursor { animation: blink 1.1s steps(1) infinite; }
+      @keyframes travel { to { stroke-dashoffset: -126; } }
+      @keyframes pulse { 0%,100% { opacity: .55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.45); } }
+      @keyframes blink { 50% { opacity: 0; } }
+    </style>
+  </defs>
+
+  <!-- frame -->
+  <rect x="1" y="1" width="898" height="238" rx="14" fill="#1a1b26" stroke="#2f334d" stroke-width="2"/>
+  <circle cx="180" cy="120" r="150" fill="url(#glow)"/>
+
+  <!-- ── neural network (left) ── -->
+  <g>
+    <!-- layer 1 → 2 -->
+    <path class="edge" d="M70 60 L160 50"/>  <path class="signal" d="M70 60 L160 50"/>
+    <path class="edge" d="M70 60 L160 105"/> <path class="signal s2" d="M70 60 L160 105"/>
+    <path class="edge" d="M70 120 L160 50"/> <path class="signal s3" d="M70 120 L160 50"/>
+    <path class="edge" d="M70 120 L160 105"/><path class="signal" d="M70 120 L160 105"/>
+    <path class="edge" d="M70 120 L160 160"/><path class="signal s2" d="M70 120 L160 160"/>
+    <path class="edge" d="M70 180 L160 105"/><path class="signal s3" d="M70 180 L160 105"/>
+    <path class="edge" d="M70 180 L160 160"/><path class="signal" d="M70 180 L160 160"/>
+    <path class="edge" d="M70 60 L160 160"/> <path class="signal s3" d="M70 60 L160 160"/>
+    <!-- layer 2 → 3 -->
+    <path class="edge" d="M160 50 L250 80"/>  <path class="signal s2" d="M160 50 L250 80"/>
+    <path class="edge" d="M160 105 L250 80"/> <path class="signal" d="M160 105 L250 80"/>
+    <path class="edge" d="M160 105 L250 145"/><path class="signal s3" d="M160 105 L250 145"/>
+    <path class="edge" d="M160 160 L250 145"/><path class="signal s2" d="M160 160 L250 145"/>
+    <path class="edge" d="M160 50 L250 145"/> <path class="signal" d="M160 50 L250 145"/>
+    <path class="edge" d="M160 160 L250 80"/> <path class="signal s3" d="M160 160 L250 80"/>
+    <!-- layer 3 → output -->
+    <path class="edge" d="M250 80 L320 115"/> <path class="signal" d="M250 80 L320 115"/>
+    <path class="edge" d="M250 145 L320 115"/><path class="signal s2" d="M250 145 L320 115"/>
+
+    <!-- nodes -->
+    <g><circle class="node" cx="70" cy="60" r="9"/><circle class="node-core" cx="70" cy="60" r="4"/></g>
+    <g><circle class="node" cx="70" cy="120" r="9"/><circle class="node-core n2" cx="70" cy="120" r="4"/></g>
+    <g><circle class="node" cx="70" cy="180" r="9"/><circle class="node-core n3" cx="70" cy="180" r="4"/></g>
+    <g><circle class="node" cx="160" cy="50" r="9"/><circle class="node-core n4" cx="160" cy="50" r="4"/></g>
+    <g><circle class="node" cx="160" cy="105" r="9"/><circle class="node-core" cx="160" cy="105" r="4"/></g>
+    <g><circle class="node" cx="160" cy="160" r="9"/><circle class="node-core n2" cx="160" cy="160" r="4"/></g>
+    <g><circle class="node" cx="250" cy="80" r="9"/><circle class="node-core n3" cx="250" cy="80" r="4"/></g>
+    <g><circle class="node" cx="250" cy="145" r="9"/><circle class="node-core n4" cx="250" cy="145" r="4"/></g>
+    <g><circle class="node" cx="320" cy="115" r="11"/><circle class="node-core" cx="320" cy="115" r="5"/></g>
+  </g>
+
+  <!-- ── text (right) ── -->
+  <text class="mono" x="380" y="78" font-size="44" font-weight="700" fill="url(#name-grad)">Héctor</text>
+  <text class="mono" x="382" y="112" font-size="17" fill="#c0caf5">Junior AI &amp; Big Data Engineer · 🇪🇸</text>
+
+  <text class="mono" x="382" y="152" font-size="14" fill="#565f89">// del attention al KV-cache, del tokenizer a la quantization</text>
+
+  <text class="mono" x="382" y="190" font-size="15">
+    <tspan fill="#9ece6a" font-weight="700">λ </tspan><tspan fill="#7dcfff">building agents that understand how LLMs think</tspan>
+  </text>
+  <rect class="cursor" x="790" y="177" width="9" height="16" fill="#bb9af7"/>
+
+  <!-- chips -->
+  <g class="mono" font-size="12">
+    <rect x="382" y="205" width="42" height="22" rx="11" fill="#24283b" stroke="#3b4261"/>
+    <text x="403" y="220" text-anchor="middle" fill="#f7768e">RL</text>
+    <rect x="432" y="205" width="56" height="22" rx="11" fill="#24283b" stroke="#3b4261"/>
+    <text x="460" y="220" text-anchor="middle" fill="#bb9af7">LLMs</text>
+    <rect x="496" y="205" width="52" height="22" rx="11" fill="#24283b" stroke="#3b4261"/>
+    <text x="522" y="220" text-anchor="middle" fill="#7aa2f7">RAG</text>
+    <rect x="556" y="205" width="92" height="22" rx="11" fill="#24283b" stroke="#3b4261"/>
+    <text x="602" y="220" text-anchor="middle" fill="#9ece6a">homelab</text>
+    <rect x="656" y="205" width="92" height="22" rx="11" fill="#24283b" stroke="#3b4261"/>
+    <text x="702" y="220" text-anchor="middle" fill="#e0af68">PyTorch</text>
+  </g>
+</svg>
